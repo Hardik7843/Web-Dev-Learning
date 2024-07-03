@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .nav {
+            background-color: black;
+            height: 4.5rem;
+        }
+
+        .nav a {
+            color: aliceblue;
+            padding: 1.5em;
+            text-align: center;
+            float: left;
+        }
+
+        .nav a:hover {
+            color: blue;
+        }
+
+        .nav a:visited{
+            color:purple;
+            }
+
+    </style>
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action="/index.html" enctype="text/plain">
-
-        <!-- HTML forms -->
-        <div>
-            <label for="password">Name</label>
-            <input type="text" name="name" id="">
-        </div>
-        <div>
-            <label for="name">password</label>
-            <input type="password" name="password" id="">
-        </div>
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-        
-        <!-- This is a HTML for Selecting one options out of multiple opitons -->
-        <h2>
-            <label for="industry">Type of Software Developer you are</label>
-            <input type="radio" name="type" id="radio1" value="radio1">
-            <label for="radio1">Solving Problems</label>
-            <input type="radio" name="type" id="radio2" value="radio2">
-            <label for="radio1">Building Products</label>
-        </h2>
-        
-        <!-- Let's See the  -->
-        <select name="cars" id="cars">
-            <option value="saab">Saab</option>
-            <option value="audi">Audi</option>
-            <option value="volvo">Volvo</option>
-            <option value="mercedes">Mercedes</option>
-        </select>
-
-    </form>
-
-    
+    <div class="nav">
+        <a href="https://docs.google.com/document/d/1yc_71gC7oek13olnFqqj1_bQQAYkumTGIxp6Jdcqyvg/edit">Web dev</a>
+        <a href="https://docs.google.com/document/d/1NMJpX3yRewIJL_RKj-xMwMFDDb6VHvLIWT_i8qR9nVM/edit">Main course</a>
+        <a href="index.html">index</a>
+    </div>
 </body>
 </html>

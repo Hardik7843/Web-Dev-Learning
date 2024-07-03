@@ -1,0 +1,19 @@
+.nav {
+    background-color: black;
+    height: 4.5rem;
+}
+
+.nav a {
+    color: aliceblue;
+    padding: 1.5em;
+    text-align: center;
+    float: left;
+}
+
+.nav a:hover {
+    color: blue;
+}
+
+.nav a:visited{
+    color:purple;
+    }
