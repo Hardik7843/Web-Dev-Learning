@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+
+.div2 {
+  width: 300px;
+  height: 100px;  
+  padding: 25px;
+  border: 1px solid red;
+  /* Box sizing determines how the height
+  and width of box should be calculated. 
+  sometimes the size mentioned in css 
+  isn't same visible after rendering
+  If it is big then content-box is applied
+
+  */
+
+  /* If box-sizing is set to content box
+  then padding and border width are added 
+  to total width of box this is default*/
+
+  box-sizing: content-box;
+  /* If box-sizing is set to border box
+  then padding and border width are not
+  added to total width of box instead 
+  padding is applied inside the box. */
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<h1>Without box-sizing</h1>
+
+<div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+
+</body>
+</html>
+
+

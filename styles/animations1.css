@@ -1,0 +1,35 @@
+.animated {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 8, 0.445);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.child {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2s, height 0.2s;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(0, 0, 3, 0);
+}
+
+
+
+.child:hover {
+    font-family:fantasy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    /* transition: width 0.2s, height 0.2s; */
+    background-color:rgb(237, 255, 74) ;
+}

@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 600px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deb887;
+}
+
+
+
+/* @media screen and (max-width:300px) and (min-width:100px)  {
+    .container {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #deb887;
+        align-items: center;
+    } 
+}  */
+
+.flex-item {
+    height: 5em;
+    width: 5em;
+    border: solid black;
+    background-color: aqua;
+    /* margin-left: 2em;
+    margin-right: 2em; */
+    /* margin: 2em; */
+}
+

@@ -1,0 +1,36 @@
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+    background-color: beige;
+    font-family: cursive;
+}
+
+#box {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgb(224, 233, 233);
+    padding: 0.5em;
+    border: solid black;
+}
+
+.special {
+    background-color: #cfe9f1;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: rgb(0, 0, 0) solid;
+    margin-left: 5cm;
+}
+
+.headline {
+    margin-left: 5cm;
+}
+
+.cleared {
+    margin-top: 10px;
+    clear: left;
+}
+
