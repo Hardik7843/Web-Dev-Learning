@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive & Non Primitive</title>
+</head>
+<body>
+    <script>
+        let sym = Symbol("Hello")
+        console.log(typeof(sym));
+        console.log(sym);
+        let s = Symbol("Hello")
+        console.log(s)
+
+        let myVar5=undefined;
+        console.log(myVar5)
+
+        // Arrays'
+        let subjects= [ 1, "CN", "DBMS", "Software Engineering" , "DSA"];
+        console.log(subjects[0]);
+
+        
+        // Type coercion(casting) in JavaScript
+
+        // Type casting mannual
+        const value1 = "5";
+        const value2 = 9;
+        let sum = value1 + value2;
+        /* OR */
+        // sum = Number(value1) + value2;
+        console.log(sum);
+
+        // Type casting by Compiler
+        let subjects2 = new Array(1,2,3,4,5,6,6.6,3,22,2)
+        console.log(subjects2["6"])
+        console.log(subjects2[6])
+
+        // Pushing elements in JS
+        subjects2.push("Hii")
+        console.log(subjects2)
+
+        subjects2.pop()
+        console.log(subjects2)
+
+        let employee = {
+            "Hii" : 1 ,
+            2 : "Hello"
+        }
+        console.log(employee["Hii"])
+        
+
+
+
+
+    </script>
+
+    Hii
+</body>
+</html>
