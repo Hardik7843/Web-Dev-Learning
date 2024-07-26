@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #navbar>ul {
+            color: green;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="containet">
+        <ul id="navbar">
+            <li class="list">Home</li>
+            <li class="list">About</li>
+            <li class="list">Privacy</li>
+            <li class="list">Contact</li>
+        </ul>
+    </div>
+
+    <script>
+        let main=document.getElementById("main");
+        console.log(main);
+
+        let navbar = document.getElementById("navbar");
+        console.log(navbar)
+
+        // let container = document.getElementsByClassName("container");
+        // console.log("I am HTML container" , container);
+
+
+        let container = document.querySelector(".container");
+        console.log("I am CSS container" , container);
+        // let a = 4;
+        // if( a < 5)
+        // {
+        //     navbar.innerHTML = "Hiii";
+        // }
+
+        let CSS_list = document.querySelectorAll("#navbar>li");
+        console.log(CSS_list);
+        CSS_list[1].innerHTML = "I am changed with CSS";
+
+        let HTML_list = document.getElementsByClassName("list");
+        console.log(HTML_list);
+        HTML_list[2].innerHTML = "I am changed with HTML"
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List Method</title>
+</head>
+<body>
+    <h1>Class List Properties</h1>
+
+    <ul id="methods">
+        <div id="u" class="li li2">
+            <li >classList.add()</li>
+            <i>to add new classes to specifig element</i>
+            <li>classList.remove()</li>
+            <i>to remove classes</i>
+            <li>classList.contains()</li>
+            <i>to check if class exists</i>
+            <li>classlist.toggle()</li>
+            <i>to toggle between add & remove classes 
+            i.e if class is already there it will remove and vice versa.</i>
+        </div>
+    </ul>
+
+    <style>
+        #methods > .li {
+            background-color: yellow;
+        }
+        #methods > .li2 {
+            background-color: rgb(0, 251, 255);
+        }
+
+
+
+    </style>
+    <script>
+        let lists = document.getElementById("u");
+        lists.classList.toggle("li2");
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewportṇ" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        I am Hardik. My Age is <P id="age" style="display: none;">21</P>
+    </p>
+
+    <li>
+        Age : --
+    </li>
+
+    <script>
+        let p = document.querySelector('p');
+        let age = document.getElementById('age');
+        age = age.innerText;
+
+        // console.log(age < 30);
+        if(age< 30)
+        {
+            let li = document.querySelector("li");
+            console.log(li);
+            li.innerHTML = `${age}`;
+        }
+
+    </script>
+</body>
+</html> 

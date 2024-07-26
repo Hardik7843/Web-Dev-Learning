@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Hardik(weight){
+            this.height = "5'6''";
+            this.weight = weight;
+            return this;
+        }
+
+        const h = new Hardik(52.6);
+        h.weight = 53.6;
+        h['weight'] = 52;
+        
+        // delete h.height;
+        // console.log(h)
+
+        // To gather all members inside the object
+        let k = Object.keys(h);
+        console.log(k)
+
+        // To check whether Key exists or not
+        if('weight' in h)
+        {
+            console.log( "Height: " + h.weight);
+        }
+        </script>
+    Hii
+</body>
+</html>

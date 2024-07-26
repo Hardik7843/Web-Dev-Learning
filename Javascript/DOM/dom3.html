@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation of Attributes</title>
+</head>
+<body>
+    <p>Manipulation of Attributes</p>
+    <ul>
+        <li><input id="image1" type="radio" name="meme" value="image2" onclick="changeImage('image2')">Original</li>
+        <li><input id="image2" type="radio" name="meme" value="image3" onclick="changeImage('image')">Recreated</li>
+    </ul>
+    <img id="displayedImage" src="image2.png" alt="Image">
+
+    <script>
+        function changeImage(imageName) {
+            // Update the src attribute of the img element
+            let img = document.getElementById('displayedImage');
+            // Getter methos 
+            let name = img.getAttribute("src");
+
+            // Setter Method
+            img.setAttribute("src" , `${imageName}.png`);
+
+            // document.getElementById('displayedImage').src = imageName + '.png';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        // const hardik = {
+        //     firstName : "Hardik",
+        //     lastName : "Prajapati",
+        //     age : 50,
+        //     eyeColor : "blue",
+        //     draw: function a(param) {
+        //         console.log(param)
+
+        //     }
+        // }
+        // console.log(hardik);
+
+        // function CreateHardik()
+        // {
+        //     return {
+        //         firstName : "Hardik",
+        //         lastName : "Prajapati",
+        //         age : 50,
+        //         eyeColor : "blue",
+        //         draw: function a(param) {
+        //             console.log(param)
+    
+        //         }
+        //     }
+        // }
+
+        // let hardik2 = CreateHardik();
+        // console.log(hardik2); 
+
+        function ConstructHardik()
+        {
+            this.firstName = "Hardik",
+            this.lastName  = "Prajapati",
+            this.age  = 50,
+            this.eyeColor  = "blue",
+            this.draw = function a(param) {
+                console.log(param)
+            }
+        }
+
+        let hardik3 = new ConstructHardik();
+        console.log(hardik3); 
+
+
+    </Script>
+</body>
+</html>
