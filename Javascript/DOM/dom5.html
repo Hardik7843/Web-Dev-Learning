@@ -9,7 +9,7 @@
     <h1>Class List Properties</h1>
 
     <ul id="methods">
-        <div id="u" class="li li2">
+        <div id="u" class="">
             <li >classList.add()</li>
             <i>to add new classes to specifig element</i>
             <li>classList.remove()</li>
@@ -35,7 +35,14 @@
     </style>
     <script>
         let lists = document.getElementById("u");
-        lists.classList.toggle("li2");
+        console.log(lists.classList);
+        lists.classList.add("li2");
+        lists.classList.remove("li2");
+
+        // lists.classList.toggle("li");
+        // lists.classList.toggle("li");
+        
+
     </script>
 
     
