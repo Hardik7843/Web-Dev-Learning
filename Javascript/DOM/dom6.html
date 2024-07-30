@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        I am first div.
+        <h1 id="h1">
+            I am heading for div1
+        </h1>
+        <p id="paragraph">I am paragraph for div1</p>
+
+        <ul id="ul1">
+            I am list in div1
+            <li id="li1">I am llist item1</li>
+            <li id="li2">I am llist item2</li>
+            <li id="li3">I am llist item3</li>
+            <li id="li4">I am llist item4</li>
+        </ul>
+    </div>
+
+    <script>
+        let div = document.getElementById("div1");
+        let children = div.children;
+        let first_child = children[0];
+        // console.log(first_child.parentElement);
+
+        let second_child = first_child.nextElementSibling;
+
+        console.log(second_child.previousElementSibling);
+    </script>
+</body>
+</html>

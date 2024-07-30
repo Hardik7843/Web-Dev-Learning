@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element.append()</title>
+</head>
+<body>
+    <p id="p">I am paragraph</p>
+    <div id="div">
+        I am div.
+    </div>
+
+    <script>
+        let div = document.createElement("div");
+        let text = document.createTextNode("I am text from js for div");
+        div.append(text);
+        let p = document.createElement("p");
+        let p_text = document.createTextNode("I am text from js for p")
+        p.append(p_text);
+
+        console.log(div.childNodes); // NodeList [ <p> ]
+        
+        let p1 = document.getElementById("p");
+        // Both the methods below are same. 
+        // although second one can add text(String) as well. 
+        // p1.appendChild(div);
+        p1.append(div);
+
+        // Prepend add element at start of mentioned element.
+        p1.prepend(p);
+    </script>
+</body>
+</html>

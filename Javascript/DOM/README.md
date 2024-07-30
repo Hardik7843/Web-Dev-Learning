@@ -148,3 +148,125 @@ h1.style.color = "green"
 ### Output
 As you can see toggling class `li` two times will be effective same as no class. means. toggle function adds a class when it's absent and remove the class when present.
 ![alt text](image-3.png)
+
+
+# `dom7.html`
+### Children of particular of Tag.
+```
+<div id="div1">
+        I am first div.
+        <h1 id="h1">
+            I am heading for div1
+        </h1>
+        <p id="paragraph">I am paragraph for div1</p>
+
+        <ul id="ul1">
+            I am list in div1
+            <li id="li1">I am llist item1</li>
+            <li id="li2">I am llist item2</li>
+            <li id="li3">I am llist item3</li>
+            <li id="li4">I am llist item4</li>
+        </ul>
+    </div>
+
+    <script>
+        let div = document.getElementById("div1");
+        let children = div.children;
+        console.log(children[0]);
+    </script>
+```
+
+### 
+
+
+### Finding parent element with child tag
+```
+<div id="div1">
+        I am first div.
+        <h1 id="h1">
+            I am heading for div1
+        </h1>
+        <p id="paragraph">I am paragraph for div1</p>
+
+        <ul id="ul1">
+            I am list in div1
+            <li id="li1">I am llist item1</li>
+            <li id="li2">I am llist item2</li>
+            <li id="li3">I am llist item3</li>
+            <li id="li4">I am llist item4</li>
+        </ul>
+    </div>
+
+    <script>
+        let div = document.getElementById("div1");
+        let children = div.children;
+        let first_child = children[0];
+        console.log(first_child.parentElement);
+    </script>
+```
+
+### 
+
+### Finding Next Siblings of Element.
+```
+<div id="div1">
+        I am first div.
+        <h1 id="h1">
+            I am heading for div1
+        </h1>
+        <p id="paragraph">I am paragraph for div1</p>
+
+        <ul id="ul1">
+            I am list in div1
+            <li id="li1">I am llist item1</li>
+            <li id="li2">I am llist item2</li>
+            <li id="li3">I am llist item3</li>
+            <li id="li4">I am llist item4</li>
+        </ul>
+    </div>
+
+    <script>
+        let div = document.getElementById("div1");
+        let children = div.children;
+        let first_child = children[0];
+        console.log(first_child.nextElementSibling);
+    </script>
+```
+
+### Output
+```
+<p id="paragraph">I am paragraph for div1</p>
+```
+
+### Finding Previous Siblings of Element.
+```
+<div id="div1">
+        I am first div.
+        <h1 id="h1">
+            I am heading for div1
+        </h1>
+        <p id="paragraph">I am paragraph for div1</p>
+
+        <ul id="ul1">
+            I am list in div1
+            <li id="li1">I am llist item1</li>
+            <li id="li2">I am llist item2</li>
+            <li id="li3">I am llist item3</li>
+            <li id="li4">I am llist item4</li>
+        </ul>
+    </div>
+
+    <script>
+        let div = document.getElementById("div1");
+        let children = div.children;
+        let first_child = children[0];
+        let second_child = first_child.nextElementSibling;
+        console.log(second_child.previousElementSibling);
+    </script>
+```
+
+### Output
+```
+<h1 id="h1"> I am heading for div1 </h1>
+```
+
